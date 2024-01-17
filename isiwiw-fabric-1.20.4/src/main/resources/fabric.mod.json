@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "${project.mod_id}",
+	"version": "${project.mod_version}",
+
+	"name": "${project.mod_name}",
+	"description": "${project.mod_description}",
+	"authors": ["${project.mod_author}"],
+	"contact":
+	{
+		"homepage": "${project.mod_contact_homepage}",
+		"sources": "${project.mod_contact_sources}",
+		"issues": "${project.mod_contact_issues}"
+	},
+
+	"license": "${project.mod_license}",
+	"icon": "${mod_icon}",
+
+	"environment": "*",
+	"entrypoints":
+	{
+		"client": ["${project.mod_entrypoint_client}"],
+		"server": ["${project.mod_entrypoint_server}"]
+	},
+	"mixins":
+	[
+		"isiwiw.mixin.__.json",
+		"isiwiw.mixin.json",
+		"isiwiw.client.mixin.json"
+	],
+
+	"depends":
+	{
+		"fabricloader": ">=${project.loader_version}",
+		"minecraft": "${project.mod_depends_minecraft}",
+		"java": "${project.mod_depends_java}"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "io.github.thecsdev.isiwiw.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": ["MixinFabricRegistryInit", "MixinResourcePackSendS2CPacket", "MixinResourcePackStatusC2SPacket"],
+	"injectors": { "defaultRequire": 1 }
+}
